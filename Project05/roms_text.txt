@@ -1,0 +1,31 @@
+	data <= 
+		 "0011100001" when addr = "0000" else -- Move 0001 to ACC high    
+		 "0010100000" when addr = "0001" else -- Move 0000 to ACC low
+		 "0001000000" when addr = "0010" else -- Move ACC to LR
+		 "0100110101" when addr = "0011" else -- Sub 1 from LR
+		 "1110000110" when addr = "0100" else -- If LR = 0 branch to 0110
+		 "1000000011" when addr = "0101" else -- Else branch to 0011
+		 "0010101000" when addr = "0110" else -- Move 1000 to ACC low for flash count
+		 "0001110000" when addr = "0111" else -- Move 1s to LR
+		 "0110011100" when addr = "1000" else -- XOR the LR and write it back to the LR (bit inversion)
+		 "0100110001" when addr = "1001" else -- Sub 1 from ACC
+		 "1100001100" when addr = "1010" else -- If ACC = 0 branch to 1100
+		 "1000001000" when addr = "1011" else -- Else branch to 1000
+		 "1000000000" when addr = "1100" else -- Branch to 0000 for reset
+		 "0000000000";                        -- garbage	
+	
+	
+  data <= 
+    "0011100001" when addr = "0000" else -- Move 0001 to ACC high    
+    "0010100000" when addr = "0001" else -- Move 0000 to ACC low
+    "0100010101" when addr = "0010" else -- Add 1 to LR
+	 "0100110001" when addr = "0011" else -- Sub 1 from ACC
+    "1100000110" when addr = "0100" else -- If ACC = 0 branch to 0110
+    "1000000010" when addr = "0101" else -- Else branch to 0010
+	 "0011100001" when addr = "0110" else -- Move 0001 to ACC high    
+    "0010100000" when addr = "0111" else -- Move 0000 to ACC low
+    "0001000000" when addr = "1000" else -- Move ACC to LR
+    "0100110101" when addr = "1001" else -- Sub 1 from LR
+    "1110000000" when addr = "1010" else -- If LR = 0 branch to 0000
+    "1000001001" when addr = "1011" else -- Else branch to 1001
+    "0000000000";                        -- garbage

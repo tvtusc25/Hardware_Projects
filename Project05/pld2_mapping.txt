@@ -1,0 +1,11 @@
+lightsig,0,gLED,0
+lightsig,1,gLED,1
+lightsig,2,gLED,2
+lightsig,3,gLED,3
+lightsig,4,gLED,4
+lightsig,5,gLED,5
+lightsig,6,gLED,6
+lightsig,7,gLED,7
+IRView,0,rLED,0
+IRView,1,rLED,1
+IRView,2,rLED,2
