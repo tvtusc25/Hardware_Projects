@@ -1,0 +1,11 @@
+lights,0,gLED,0
+lights,1,gLED,1
+lights,2,gLED,2
+lights,3,gLED,3
+lights,4,gLED,4
+lights,5,gLED,5
+lights,6,gLED,6
+lights,7,gLED,7
+IRView,0,rLED,0
+IRView,1,rLED,1
+IRView,2,rLED,2

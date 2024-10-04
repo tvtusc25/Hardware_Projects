@@ -1,0 +1,94 @@
+lightrom tests
+Given:
+
+
+
+data <= 
+      "000" when addr = "0000" else -- move 0s to LR  00000000
+      "101" when addr = "0001" else -- bit invert LR  11111111
+      "101" when addr = "0010" else -- bit invert LR  00000000
+      "101" when addr = "0011" else -- bit invert LR  11111111
+      "001" when addr = "0100" else -- shift LR right 01111111
+      "001" when addr = "0101" else -- shift LR right 00111111
+      "111" when addr = "0110" else -- rotate LR left 01111110
+      "111" when addr = "0111" else -- rotate LR left 11111100
+      "111" when addr = "1000" else -- rotate LR left 11111001
+      "111" when addr = "1001" else -- rotate LR left 11110011
+      "010" when addr = "1010" else -- shift LR left  11100110
+      "010" when addr = "1011" else -- shift LR left  11001100
+      "011" when addr = "1100" else -- add 1 to LR    11001101
+      "100" when addr = "1101" else -- sub 1 from LR  11001100
+      "101" when addr = "1110" else -- bit invert LR  00110011
+      "011";                        -- add 1 to LR    00110100
+		
+Test1:
+
+data <= 
+      "000" when addr = "0000" else -- move 0s to LR  00000000
+      "011" when addr = "0001" else -- add 1 to LR    00000001
+      "111" when addr = "0010" else -- rotate LR left 00000010
+      "011" when addr = "0011" else -- add 1 to LR    00000011
+      "111" when addr = "0100" else -- rotate LR left 00000110
+      "011" when addr = "0101" else -- add 1 to LR    00000111
+      "111" when addr = "0110" else -- rotate LR left 00001110
+      "011" when addr = "0111" else -- add 1 to LR    00001111
+      "111" when addr = "1000" else -- rotate LR left 00011110
+      "011" when addr = "1001" else -- add 1 to LR    00011111
+      "111" when addr = "1010" else -- rotate LR left 00111110
+      "011" when addr = "1011" else -- add 1 to LR    00111111
+      "111" when addr = "1100" else -- rotate LR left 01111110
+      "011" when addr = "1101" else -- add 1 to LR    01111111
+      "111" when addr = "1110" else -- rotate LR left 11111110
+      "011";
+
+Test2:	
+	
+data <= 
+      "000" when addr = "0000" else -- move 0s to LR  00000000
+      "101" when addr = "0001" else -- bit invert LR  11111111
+      "001" when addr = "0010" else -- shift LR right 01111111
+      "100" when addr = "0011" else -- sub 1 from LR  01111110
+      "001" when addr = "0100" else -- shift LR right 00111111
+      "100" when addr = "0101" else -- sub 1 from LR  00111110
+      "001" when addr = "0110" else -- shift LR right 00011111
+      "100" when addr = "0111" else -- sub 1 from LR  00011110
+      "001" when addr = "1000" else -- shift LR right 00001111
+      "100" when addr = "1001" else -- sub 1 from LR  00001110
+      "001" when addr = "1010" else -- shift LR right 00000111
+      "100" when addr = "1011" else -- sub 1 from LR  00000110
+      "001" when addr = "1100" else -- shift LR right 00000011
+      "100" when addr = "1101" else -- sub 1 from LR  00000010
+      "001" when addr = "1110" else -- shift LR right 00000001
+      "100";
+
+
+data <= 
+      "0000" when addr = "00000" else -- move 0s to LR  00000000
+      "0101" when addr = "00001" else -- bit invert LR  11111111
+      "0001" when addr = "00010" else -- shift LR right 01111111
+      "0100" when addr = "00011" else -- sub 1 from LR  01111110
+      "0001" when addr = "00100" else -- shift LR right 00111111
+      "0100" when addr = "00101" else -- sub 1 from LR  00111110
+      "0001" when addr = "00110" else -- shift LR right 00011111
+      "0100" when addr = "00111" else -- sub 1 from LR  00011110
+      "0001" when addr = "01000" else -- shift LR right 00001111
+      "0100" when addr = "01001" else -- sub 1 from LR  00001110
+      "0001" when addr = "01010" else -- shift LR right 00000111
+      "0100" when addr = "01011" else -- sub 1 from LR  00000110
+      "0001" when addr = "01100" else -- shift LR right 00000011
+      "0100" when addr = "01101" else -- sub 1 from LR  00000010
+      "0001" when addr = "01110" else -- shift LR right 00000001
+      "0100" when addr = "01111" else -- sub 1 from LR  00000000
+      "0000" when addr = "10000" else -- move 0s to LR  00000000
+      "1000" when addr = "10001" else -- move 1s to LR  11111111
+      "1001" when addr = "10010" else -- spread LR      11100111
+      "1001" when addr = "10011" else -- spread LR      11000011
+      "1001" when addr = "10100" else -- spread LR	10000001
+      "1001" when addr = "10101" else -- spread LR      11100111
+      "1001" when addr = "10110" else -- spread LR	11100111
+      "1001" when addr = "10111" else -- spread LR	11100111
+      "0000" when addr = "11000" else -- move 0s to LR  00000000
+      "0101" when addr = "11001" else -- bit invert LR  11111111
+      "0101";
+
+

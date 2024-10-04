@@ -1,0 +1,10 @@
+v 4
+file . "lightsbench.vhd" "353558175b31fba10635ea48da4d48052a84f354" "20221024203647.345":
+  entity lightsbench at 8( 91) + 0 on 137;
+  architecture test of lightsbench at 15( 196) + 0 on 138;
+file . "lights.vhd" "c0cf96fd3037ce205bcab99d1c962233a7eb7503" "20221024203647.348":
+  entity lights at 8( 229) + 0 on 139;
+  architecture rtl of lights at 24( 533) + 0 on 140;
+file . "lightrom.vhd" "d594d892cbf3bd24c63440720ee9dfa0faf2fac9" "20221024203647.350":
+  entity lightrom at 1( 0) + 0 on 141;
+  architecture one of lightrom at 12( 205) + 0 on 142;
