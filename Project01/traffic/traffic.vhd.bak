@@ -1,0 +1,198 @@
+-- Copyright (C) 1991-2012 Altera Corporation
+-- Your use of Altera Corporation's design tools, logic functions 
+-- and other software and tools, and its AMPP partner logic 
+-- functions, and any output files from any of the foregoing 
+-- (including device programming or simulation files), and any 
+-- associated documentation or information are expressly subject 
+-- to the terms and conditions of the Altera Program License 
+-- Subscription Agreement, Altera MegaCore Function License 
+-- Agreement, or other applicable license agreement, including, 
+-- without limitation, that your use is for the sole purpose of 
+-- programming logic devices manufactured by Altera and sold by 
+-- Altera or its authorized distributors.  Please refer to the 
+-- applicable agreement for further details.
+
+-- PROGRAM		"Quartus II 32-bit"
+-- VERSION		"Version 12.1 Build 177 11/07/2012 SJ Full Version"
+-- CREATED		"Sun Sep 25 15:46:52 2022"
+
+LIBRARY ieee;
+USE ieee.std_logic_1164.all; 
+
+LIBRARY work;
+
+ENTITY traffic IS 
+	PORT
+	(
+		clk :  IN  STD_LOGIC;
+		enable :  IN  STD_LOGIC;
+		reset :  IN  STD_LOGIC;
+		NS_R :  OUT  STD_LOGIC;
+		NS_G :  OUT  STD_LOGIC;
+		NS_Y :  OUT  STD_LOGIC;
+		EW_R :  OUT  STD_LOGIC;
+		EW_G :  OUT  STD_LOGIC;
+		EW_Y :  OUT  STD_LOGIC
+	);
+END traffic;
+
+ARCHITECTURE bdf_type OF traffic IS 
+
+COMPONENT counter
+	PORT(clk : IN STD_LOGIC;
+		 reset : IN STD_LOGIC;
+		 enable : IN STD_LOGIC;
+		 q : OUT STD_LOGIC_VECTOR(3 DOWNTO 0)
+	);
+END COMPONENT;
+
+SIGNAL	q :  STD_LOGIC_VECTOR(3 DOWNTO 0);
+SIGNAL	SYNTHESIZED_WIRE_0 :  STD_LOGIC;
+SIGNAL	SYNTHESIZED_WIRE_1 :  STD_LOGIC;
+SIGNAL	SYNTHESIZED_WIRE_2 :  STD_LOGIC;
+SIGNAL	SYNTHESIZED_WIRE_3 :  STD_LOGIC;
+SIGNAL	SYNTHESIZED_WIRE_4 :  STD_LOGIC;
+SIGNAL	SYNTHESIZED_WIRE_5 :  STD_LOGIC;
+SIGNAL	SYNTHESIZED_WIRE_6 :  STD_LOGIC;
+SIGNAL	SYNTHESIZED_WIRE_7 :  STD_LOGIC;
+SIGNAL	SYNTHESIZED_WIRE_8 :  STD_LOGIC;
+SIGNAL	SYNTHESIZED_WIRE_9 :  STD_LOGIC;
+SIGNAL	SYNTHESIZED_WIRE_10 :  STD_LOGIC;
+SIGNAL	SYNTHESIZED_WIRE_11 :  STD_LOGIC;
+SIGNAL	SYNTHESIZED_WIRE_12 :  STD_LOGIC;
+SIGNAL	SYNTHESIZED_WIRE_13 :  STD_LOGIC;
+SIGNAL	SYNTHESIZED_WIRE_14 :  STD_LOGIC;
+SIGNAL	SYNTHESIZED_WIRE_15 :  STD_LOGIC;
+SIGNAL	SYNTHESIZED_WIRE_16 :  STD_LOGIC;
+SIGNAL	SYNTHESIZED_WIRE_17 :  STD_LOGIC;
+SIGNAL	SYNTHESIZED_WIRE_18 :  STD_LOGIC;
+SIGNAL	SYNTHESIZED_WIRE_19 :  STD_LOGIC;
+SIGNAL	SYNTHESIZED_WIRE_20 :  STD_LOGIC;
+SIGNAL	SYNTHESIZED_WIRE_21 :  STD_LOGIC;
+SIGNAL	SYNTHESIZED_WIRE_22 :  STD_LOGIC;
+SIGNAL	SYNTHESIZED_WIRE_23 :  STD_LOGIC;
+SIGNAL	SYNTHESIZED_WIRE_24 :  STD_LOGIC;
+
+
+BEGIN 
+
+
+
+SYNTHESIZED_WIRE_14 <= NOT(q(1));
+
+
+
+SYNTHESIZED_WIRE_15 <= NOT(q(0));
+
+
+
+SYNTHESIZED_WIRE_19 <= NOT(q(3));
+
+
+
+SYNTHESIZED_WIRE_20 <= NOT(q(2));
+
+
+
+SYNTHESIZED_WIRE_21 <= NOT(q(3));
+
+
+
+SYNTHESIZED_WIRE_22 <= NOT(q(2));
+
+
+
+SYNTHESIZED_WIRE_23 <= NOT(q(3));
+
+
+
+SYNTHESIZED_WIRE_24 <= NOT(q(1));
+
+
+
+NS_Y <= SYNTHESIZED_WIRE_0 AND q(2) AND q(1);
+
+
+SYNTHESIZED_WIRE_0 <= NOT(q(3));
+
+
+
+EW_R <= SYNTHESIZED_WIRE_1 OR SYNTHESIZED_WIRE_2;
+
+
+SYNTHESIZED_WIRE_1 <= SYNTHESIZED_WIRE_3 AND SYNTHESIZED_WIRE_4 AND SYNTHESIZED_WIRE_5;
+
+
+NS_R <= SYNTHESIZED_WIRE_6 OR q(3);
+
+
+SYNTHESIZED_WIRE_3 <= NOT(q(2));
+
+
+
+SYNTHESIZED_WIRE_4 <= NOT(q(1));
+
+
+
+SYNTHESIZED_WIRE_5 <= NOT(q(0));
+
+
+
+EW_G <= SYNTHESIZED_WIRE_7 OR SYNTHESIZED_WIRE_8 OR SYNTHESIZED_WIRE_9;
+
+
+SYNTHESIZED_WIRE_9 <= q(3) AND SYNTHESIZED_WIRE_10 AND q(0);
+
+
+SYNTHESIZED_WIRE_7 <= q(3) AND SYNTHESIZED_WIRE_11 AND q(1);
+
+
+SYNTHESIZED_WIRE_8 <= q(3) AND q(2) AND SYNTHESIZED_WIRE_12;
+
+
+SYNTHESIZED_WIRE_10 <= NOT(q(2));
+
+
+
+SYNTHESIZED_WIRE_6 <= SYNTHESIZED_WIRE_13 AND SYNTHESIZED_WIRE_14 AND SYNTHESIZED_WIRE_15;
+
+
+SYNTHESIZED_WIRE_11 <= NOT(q(2));
+
+
+
+SYNTHESIZED_WIRE_12 <= NOT(q(1));
+
+
+
+EW_Y <= q(3) AND q(2) AND q(1);
+
+
+SYNTHESIZED_WIRE_2 <= NOT(q(3));
+
+
+
+SYNTHESIZED_WIRE_13 <= NOT(q(2));
+
+
+
+b2v_inst50 : counter
+PORT MAP(clk => clk,
+		 reset => reset,
+		 enable => enable,
+		 q => q);
+
+
+NS_G <= SYNTHESIZED_WIRE_16 OR SYNTHESIZED_WIRE_17 OR SYNTHESIZED_WIRE_18;
+
+
+SYNTHESIZED_WIRE_18 <= SYNTHESIZED_WIRE_19 AND SYNTHESIZED_WIRE_20 AND q(0);
+
+
+SYNTHESIZED_WIRE_16 <= SYNTHESIZED_WIRE_21 AND SYNTHESIZED_WIRE_22 AND q(1);
+
+
+SYNTHESIZED_WIRE_17 <= SYNTHESIZED_WIRE_23 AND q(2) AND SYNTHESIZED_WIRE_24;
+
+
+END bdf_type;

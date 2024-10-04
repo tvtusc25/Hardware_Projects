@@ -1,0 +1,451 @@
+$date
+  Mon Sep 26 21:24:02 2022
+$end
+$version
+  GHDL v0
+$end
+$timescale
+  1 fs
+$end
+$scope module standard $end
+$upscope $end
+$scope module std_logic_1164 $end
+$upscope $end
+$scope module numeric_std $end
+$upscope $end
+$scope module trafficbench $end
+$var reg 1 ! clk $end
+$var reg 1 " enable $end
+$var reg 1 # reset $end
+$var reg 1 $ nsred $end
+$var reg 1 % nsyellow $end
+$var reg 1 & nsgreen $end
+$var reg 1 ' ewred $end
+$var reg 1 ( ewyellow $end
+$var reg 1 ) ewgreen $end
+$scope module l0 $end
+$var reg 1 * clk $end
+$var reg 1 + enable $end
+$var reg 1 , reset $end
+$var reg 1 - ns_r $end
+$var reg 1 . ns_g $end
+$var reg 1 / ns_y $end
+$var reg 1 0 ew_r $end
+$var reg 1 1 ew_g $end
+$var reg 1 2 ew_y $end
+$var reg 4 3 q[3:0] $end
+$var reg 1 4 synthesized_wire_0 $end
+$var reg 1 5 synthesized_wire_1 $end
+$var reg 1 6 synthesized_wire_2 $end
+$var reg 1 7 synthesized_wire_3 $end
+$var reg 1 8 synthesized_wire_4 $end
+$var reg 1 9 synthesized_wire_5 $end
+$var reg 1 : synthesized_wire_6 $end
+$var reg 1 ; synthesized_wire_7 $end
+$var reg 1 < synthesized_wire_8 $end
+$var reg 1 = synthesized_wire_9 $end
+$var reg 1 > synthesized_wire_10 $end
+$var reg 1 ? synthesized_wire_11 $end
+$var reg 1 @ synthesized_wire_12 $end
+$var reg 1 A synthesized_wire_13 $end
+$var reg 1 B synthesized_wire_14 $end
+$var reg 1 C synthesized_wire_15 $end
+$var reg 1 D synthesized_wire_16 $end
+$var reg 1 E synthesized_wire_17 $end
+$var reg 1 F synthesized_wire_18 $end
+$var reg 1 G synthesized_wire_19 $end
+$var reg 1 H synthesized_wire_20 $end
+$var reg 1 I synthesized_wire_21 $end
+$var reg 1 J synthesized_wire_22 $end
+$var reg 1 K synthesized_wire_23 $end
+$var reg 1 L synthesized_wire_24 $end
+$scope module b2v_inst50 $end
+$var reg 1 M clk $end
+$var reg 1 N reset $end
+$var reg 1 O enable $end
+$var reg 4 P q[3:0] $end
+$var reg 4 Q cnt[3:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+0!
+1"
+1#
+1$
+0%
+0&
+1'
+0(
+0)
+0*
+1+
+1,
+1-
+0.
+0/
+10
+01
+02
+b0000 3
+14
+15
+16
+17
+18
+19
+1:
+0;
+0<
+0=
+1>
+1?
+1@
+1A
+1B
+1C
+0D
+0E
+0F
+1G
+1H
+1I
+1J
+1K
+1L
+0M
+1N
+1O
+b0000 P
+b0000 Q
+#5000000
+1!
+0#
+0$
+1&
+1*
+0,
+0-
+1.
+b0001 3
+05
+09
+0:
+0C
+1F
+1M
+0N
+b0001 P
+b0001 Q
+#10000000
+0!
+0*
+0M
+#15000000
+1!
+1*
+b0010 3
+08
+19
+0@
+0B
+1C
+1D
+0F
+0L
+1M
+b0010 P
+b0010 Q
+#20000000
+0!
+0*
+0M
+#25000000
+1!
+1*
+b0011 3
+09
+0C
+1F
+1M
+b0011 P
+b0011 Q
+#30000000
+0!
+0*
+0M
+#35000000
+1!
+1&
+1*
+1.
+b0100 3
+07
+18
+19
+0>
+0?
+1@
+0A
+1B
+1C
+0D
+1E
+0F
+0H
+0J
+1L
+1M
+b0100 P
+b0100 Q
+#40000000
+0!
+0*
+0M
+#45000000
+1!
+1*
+b0101 3
+09
+0C
+1M
+b0101 P
+b0101 Q
+#50000000
+0!
+0*
+0M
+#55000000
+1!
+1%
+0&
+1*
+0.
+1/
+b0110 3
+08
+19
+0@
+0B
+1C
+0E
+0L
+1M
+b0110 P
+b0110 Q
+#60000000
+0!
+0*
+0M
+#65000000
+1!
+1*
+b0111 3
+09
+0C
+1M
+b0111 P
+b0111 Q
+#70000000
+0!
+0*
+0M
+#75000000
+1!
+1$
+0%
+1'
+1*
+1-
+0/
+10
+b1000 3
+04
+15
+06
+17
+18
+19
+1:
+1>
+1?
+1@
+1A
+1B
+1C
+0G
+1H
+0I
+1J
+0K
+1L
+1M
+b1000 P
+b1000 Q
+#80000000
+0!
+0*
+0M
+#85000000
+1!
+0'
+1)
+1*
+00
+11
+b1001 3
+05
+09
+0:
+1=
+0C
+1M
+b1001 P
+b1001 Q
+#90000000
+0!
+0*
+0M
+#95000000
+1!
+1*
+b1010 3
+08
+19
+1;
+0=
+0@
+0B
+1C
+0L
+1M
+b1010 P
+b1010 Q
+#100000000
+0!
+0*
+0M
+#105000000
+1!
+1*
+b1011 3
+09
+1=
+0C
+1M
+b1011 P
+b1011 Q
+#110000000
+0!
+0*
+0M
+#115000000
+1!
+1)
+1*
+11
+b1100 3
+07
+18
+19
+0;
+1<
+0=
+0>
+0?
+1@
+0A
+1B
+1C
+0H
+0J
+1L
+1M
+b1100 P
+b1100 Q
+#120000000
+0!
+0*
+0M
+#125000000
+1!
+1*
+b1101 3
+09
+0C
+1M
+b1101 P
+b1101 Q
+#130000000
+0!
+0*
+0M
+#135000000
+1!
+1(
+0)
+1*
+01
+12
+b1110 3
+08
+19
+0<
+0@
+0B
+1C
+0L
+1M
+b1110 P
+b1110 Q
+#140000000
+0!
+0*
+0M
+#145000000
+1!
+1*
+b1111 3
+09
+0C
+1M
+b1111 P
+b1111 Q
+#150000000
+0!
+0*
+0M
+#155000000
+1!
+1$
+1'
+0(
+1*
+1-
+10
+02
+b0000 3
+14
+15
+16
+17
+18
+19
+1:
+1>
+1?
+1@
+1A
+1B
+1C
+1G
+1H
+1I
+1J
+1K
+1L
+1M
+b0000 P
+b0000 Q
+#160000000

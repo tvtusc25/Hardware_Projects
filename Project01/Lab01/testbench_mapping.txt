@@ -1,0 +1,4 @@
+# signal name, bit in signal, type of board widget, which bit in board widget
+A,0,switch,1
+B,0,switch,0
+F,0,RLED,0
