@@ -1,0 +1,22 @@
+library IEEE;
+use IEEE.std_logic_1164.all;
+use IEEE.numeric_std.all;
+
+entity addbench is
+end addbench;
+
+architecture one of addbench is
+
+signal num1 : unsigned(3 downto 0);
+signal num2 : unsigned(3 downto 0);
+signal sum : unsigned(4 downto 0);
+
+ component addIt
+  port(
+    A :  IN UNSIGNED(3 downto 0);
+	 B :  IN UNSIGNED(3 downto 0);
+    C :  OUT UNSIGNED(4 downto 0)
+    );
+ end component;
+ 
+ 

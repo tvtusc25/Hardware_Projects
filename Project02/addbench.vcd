@@ -1,0 +1,119 @@
+$date
+  Sat Oct  1 18:25:43 2022
+$end
+$version
+  GHDL v0
+$end
+$timescale
+  1 fs
+$end
+$scope module standard $end
+$upscope $end
+$scope module std_logic_1164 $end
+$upscope $end
+$scope module numeric_std $end
+$upscope $end
+$scope module addbench $end
+$var reg 1 ! add $end
+$var reg 4 " num1[3:0] $end
+$var reg 4 # num2[3:0] $end
+$var reg 8 $ sum[7:0] $end
+$var reg 7 % disp0[6:0] $end
+$var reg 7 & disp1[6:0] $end
+$scope module t0 $end
+$var reg 4 ' a[3:0] $end
+$var reg 4 ( b[3:0] $end
+$var reg 5 ) c[4:0] $end
+$var reg 1 * add $end
+$upscope $end
+$scope module t1 $end
+$var reg 4 + a[3:0] $end
+$var reg 7 , hex[6:0] $end
+$upscope $end
+$scope module t2 $end
+$var reg 4 - a[3:0] $end
+$var reg 7 . hex[6:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+1!
+b0001 "
+b0010 #
+b00000011 $
+b0110000 %
+b1000000 &
+b0001 '
+b0010 (
+b00011 )
+1*
+b0011 +
+b0110000 ,
+b0000 -
+b1000000 .
+#25000000
+b0010 "
+b0100 #
+b00000110 $
+b0000010 %
+b0010 '
+b0100 (
+b00110 )
+b0110 +
+b0000010 ,
+#50000000
+b1001 "
+b1000 #
+b00010001 $
+b1111001 %
+b1111001 &
+b1001 '
+b1000 (
+b10001 )
+b0001 +
+b1111001 ,
+b0001 -
+b1111001 .
+#75000000
+0!
+b1100 "
+b0111 #
+b00000101 $
+b0010010 %
+b1000000 &
+b1100 '
+b0111 (
+b00101 )
+0*
+b0101 +
+b0010010 ,
+b0000 -
+b1000000 .
+#100000000
+b1010 "
+b1010 #
+b00000000 $
+b1000000 %
+b1010 '
+b1010 (
+b00000 )
+b0000 +
+b1000000 ,
+#125000000
+b1111 "
+b00000101 $
+b0010010 %
+b1111 '
+b00101 )
+b0101 +
+b0010010 ,
+#150000000
+b0000 "
+b0000 #
+b00000000 $
+b1000000 %
+b0000 '
+b0000 (
+b00000 )
+b0000 +
+b1000000 ,
