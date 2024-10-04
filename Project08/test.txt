@@ -1,0 +1,20 @@
+# setup
+MOVEI 0 RA
+MOVEI 1 RB
+MOVEI 10 RC
+
+# loop
+loop:
+CALL add
+HALT
+
+add: 
+ADD RA RB RA
+ADD RD RA RD
+SUB RC RB RC
+BRAZ breakout
+CALL add
+
+breakout: # RD contains the sum
+RETURN
+HALT
